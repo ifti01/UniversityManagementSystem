@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Web", "UniversityManagement.Web\UniversityManagement.Web.csproj", "{D3214716-D4E3-4AFC-AB23-DF2BC5549139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Data", "UniversityManagement.Data\UniversityManagement.Data.csproj", "{4E604FCC-61CD-449B-9DF4-D639B0D366C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Service", "UniversityManagement.Service\UniversityManagement.Service.csproj", "{502479C3-805A-40DA-A15A-02FCD4ED81DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityManagement.Entities", "UniversityManagement.Entities\UniversityManagement.Entities.csproj", "{A162D5D3-E9C2-446D-B186-DC94ECC34A30}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3214716-D4E3-4AFC-AB23-DF2BC5549139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3214716-D4E3-4AFC-AB23-DF2BC5549139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3214716-D4E3-4AFC-AB23-DF2BC5549139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3214716-D4E3-4AFC-AB23-DF2BC5549139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E604FCC-61CD-449B-9DF4-D639B0D366C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E604FCC-61CD-449B-9DF4-D639B0D366C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E604FCC-61CD-449B-9DF4-D639B0D366C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E604FCC-61CD-449B-9DF4-D639B0D366C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502479C3-805A-40DA-A15A-02FCD4ED81DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502479C3-805A-40DA-A15A-02FCD4ED81DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502479C3-805A-40DA-A15A-02FCD4ED81DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502479C3-805A-40DA-A15A-02FCD4ED81DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A162D5D3-E9C2-446D-B186-DC94ECC34A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A162D5D3-E9C2-446D-B186-DC94ECC34A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A162D5D3-E9C2-446D-B186-DC94ECC34A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A162D5D3-E9C2-446D-B186-DC94ECC34A30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

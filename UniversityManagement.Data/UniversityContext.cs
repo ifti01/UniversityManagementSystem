@@ -11,5 +11,6 @@ namespace UniversityManagement.Data
     public class UniversityContext:DbContext 
     {
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Course> Courses { get; set; }
     }
 }

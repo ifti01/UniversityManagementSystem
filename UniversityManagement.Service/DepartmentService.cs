@@ -27,6 +27,7 @@ namespace UniversityManagement.Service
         }
 
         #endregion
+
         UniversityContext context = new UniversityContext();
         public List<Department> AllDepartmentsInfo()
         {
@@ -34,10 +35,13 @@ namespace UniversityManagement.Service
         }
         public void SaveDept(Department department)
         {
-
-
             context.Departments.Add(department);
             context.SaveChanges();
+        }
+
+        public Department GetDepartmentbyId(int Id)
+        {
+            return context.Departments.Find(Id);
         }
     }
 }

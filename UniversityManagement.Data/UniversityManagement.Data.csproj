@@ -55,6 +55,10 @@
     <Compile Include="Migrations\202110150943375_DepartmentInfo.designer.cs">
       <DependentUpon>202110150943375_DepartmentInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110161718519_CourseAdded.cs" />
+    <Compile Include="Migrations\202110161718519_CourseAdded.designer.cs">
+      <DependentUpon>202110161718519_CourseAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UniversityContext.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202110150943375_DepartmentInfo.resx">
       <DependentUpon>202110150943375_DepartmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110161718519_CourseAdded.resx">
+      <DependentUpon>202110161718519_CourseAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

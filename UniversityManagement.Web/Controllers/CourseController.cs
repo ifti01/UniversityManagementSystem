@@ -38,12 +38,13 @@ namespace UniversityManagement.Web.Controllers
             newCourse.Credit = viewModel.Credit;
             newCourse.Description = viewModel.Description;
 
-            newCourse.Department = DepartmentService.Instance.GetDepartmentbyId(viewModel.DepartmentId);
+            newCourse.DepartmentId = viewModel.DepartmentId;
             newCourse.Semester = (Semester)Enum.Parse(typeof(Semester),viewModel.Semester.ToString());
 
 
             CourseService.Instance.SaveCourse(newCourse);
             return RedirectToAction("Index");
         }
+
     }
 }

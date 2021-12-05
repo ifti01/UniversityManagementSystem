@@ -20,7 +20,6 @@ namespace UniversityManagement.Web.Controllers
 
             return View(viewModel);
         }
-
         public ActionResult Create()
         {
             return View();
@@ -33,7 +32,6 @@ namespace UniversityManagement.Web.Controllers
             newDepartment.Name = department.Name;
 
             DepartmentService.Instance.SaveDept(newDepartment);
-
             return RedirectToAction("Index");
         }
     }

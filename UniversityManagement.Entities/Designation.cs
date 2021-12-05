@@ -9,5 +9,6 @@ namespace UniversityManagement.Entities
     public class Designation:BaseEntity
     {
         public string DesignationName { get; set; }
+
     }
 }

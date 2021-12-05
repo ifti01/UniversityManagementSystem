@@ -21,5 +21,7 @@ namespace UniversityManagement.Entities
         public int DepartmentId { get; set; }
         public int DesignationId { get; set; }
 
+       
+
     }
 }

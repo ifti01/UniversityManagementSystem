@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using UniversityManagement.Data;
 using UniversityManagement.Entities;
+using System.Data.Entity;
 
 namespace UniversityManagement.Service
 {
@@ -33,7 +35,7 @@ namespace UniversityManagement.Service
 
         public List<Teacher> AllTeachersInfo()
         {
-            return context.Teachers.ToList();
+            return context.Teachers.Include(x=>x.Department).Include(x=>x.Designation).ToList();
         }
         public void SaveTeacher(Teacher teacher)
         {

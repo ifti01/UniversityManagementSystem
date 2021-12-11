@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="CourseAssign.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Designation.cs" />
     <Compile Include="Enum.cs" />

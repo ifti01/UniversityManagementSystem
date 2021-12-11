@@ -1,0 +1,77 @@
+﻿@model UniversityManagement.Web.ViewModel.CourseAssignViewModel
+
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Assign</h2>
+
+<form id="createTeacher">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label>Department</label>
+                <select class="form-control" name="DepartmentId">
+                    @foreach (var dept in Model.departments)
+                    {
+                        <option value="@dept.Id">@dept.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Teacher</label>
+                <select class="form-control" name="TeacherId">
+                    @foreach (var teacher in Model.teachers)
+                    {
+                        <option value="@teacher.Id">@teacher.Name</option>
+                    }
+                </select>
+            </div>
+            <br />
+            <label>Credit to be taken</label>
+            <input name="TakenCredit" />
+            <br />
+            <label>Remaining Credit</label>
+            <input name="RemainCredit" />
+            <br />
+            <div class="form-group">
+                <label>Course Code</label>
+                <select class="form-control" name="CourseId">
+                    @foreach (var course in Model.courses)
+                    {
+                        <option value="@course.Id">@course.Name</option>
+                    }
+                </select>
+            </div>
+            <br />
+            <label>Name</label>
+            <input name="Name" />
+            <br />
+            <label>Credit</label>
+            <input name="Credit" />
+            <br />
+
+            <button id="saveBtn" type="button" class="btn btn-primary">Assign</button>
+            <button type="reset" class="btn btn-danger">Cancel</button>
+
+        </div>
+    </div>
+</form>
+
+
+<script>
+    $("#saveBtn").click(function () {
+        $.ajax({
+                type: "POST",
+                url: '@Url.Action("Create", "CourseAssign")',
+                data: $("#createTeacher").serialize()
+            })
+            .done(function (response) {
+                console.log(response);
+                window.location.href = '@Url.Action("Index", "CourseAssign")';
+            })
+            .fail(function (xmlHttpRequest, textStatus, errorThrown) {
+            });
+    });
+</script>

@@ -35,7 +35,8 @@ namespace UniversityManagement.Service
 
         public List<Teacher> AllTeachersInfo()
         {
-            return context.Teachers.Include(x=>x.Department).Include(x=>x.Designation).ToList();
+            //Name is fetching from Designation and Department Tables 
+            return context.Teachers.Include(x => x.Department).Include(x => x.Designation).ToList();
         }
         public void SaveTeacher(Teacher teacher)
         {
